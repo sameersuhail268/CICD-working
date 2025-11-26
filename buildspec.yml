@@ -1,6 +1,6 @@
 version: 0.2
 
-phases: 
+phases:
   build:
     commands:
       - echo "Build block"
@@ -17,7 +17,7 @@ phases:
 artifacts:
   base-directory: CICD-working
   files:
-    - scripts/*
     - index.html
     - appspec.yml
+    - scripts/**
   discard-paths: yes
