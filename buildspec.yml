@@ -20,3 +20,4 @@ artifacts:
         - index.html
         - appspec.yml
     discard-paths: no
+    base-directory: CICD-working
