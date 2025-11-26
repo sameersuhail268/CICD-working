@@ -15,9 +15,10 @@ phases:
             - echo "Post build phase"
 
 artifacts:
+base-directory: CICD-working
     files:
         - scripts/**
         - index.html
         - appspec.yml
     discard-paths: no
-    base-directory: CICD-working
+    
