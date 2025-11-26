@@ -1,10 +1,11 @@
 version: 0.0
 os: linux
 
+file_exists_behavior: OVERWRITE
+
 files:
   - source: index.html
     destination: /var/www/html/
-    overwrite: true
 
 hooks:
   ApplicationStop:
