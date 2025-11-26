@@ -4,12 +4,16 @@ phases:
     build:
         commands:
             - echo "Build block"
-            - ls
-            - echo "Running tests to check if "Congratulations" present in index.html file"
+            - ls -l
+            - echo "Making scripts executable"
+            - chmod +x scripts/*
+            - echo "Running tests to check if 'Congratulations' present in index.html file"
             - grep "Congratulations" index.html
+
     post_build:
         commands:
             - echo "Post build phase"
+
 artifacts:
     files:
         - scripts/**
@@ -17,5 +21,3 @@ artifacts:
         - appspec.yml
     discard-paths: no
     base-directory: .
-
-            
