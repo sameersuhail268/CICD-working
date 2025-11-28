@@ -3,6 +3,8 @@ version: 0.2
 phases:
   build:
     commands:
+      - mkdir CICD-working
+      - cp -r * CICD-working/
       - echo "Build block"
       - ls -l
       - echo "Making scripts executable"
